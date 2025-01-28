@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Navbar Container */
+.navbar {
+    display: flex; /* Aligns items horizontally */
+    justify-content: space-between; /* Creates space between logo and links */
+    align-items: center; /* Vertically centers items */
+    padding: 1rem 2rem; /* Adds space inside the navbar */
+    background-color: #ADD8E6; /* Background color for the hero section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky; /* Makes the navbar stick to the top on scroll */
+    top: 0; /* Sets the sticky position at the top of the viewport */
+    z-index: 1000; /* Ensures the navbar appears above other elements */
+  }
+  
+  /* Logo Section */
+  .logo a {
+    text-decoration: none; /* Removes underline from the link */
+    display: flex; /* Aligns the logo image properly */
+    align-items: center; /* Centers the logo vertically if more content is added */
+  }
+  
+  .logo img {
+    max-height: 50px; /* Limits the height of the logo image */
+    width: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes spacing below the image */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none; /* Removes default bullets from the list */
+    display: flex; /* Aligns the links horizontally */
+    gap: 2rem; /* Adds space between the links */
+    margin: 0; /* Removes any default margin */
+  }
+  
+  .nav-links li {
+    margin: 0; /* Ensures no extra margin around list items */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    font-size: 1rem; /* Sets the font size */
+    color: #555; /* Sets a neutral color for the links */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  .nav-links a:hover {
+    color: #007bff; /* Changes link color on hover */
+  }
+
+
+  /* Hero Section */
+.hero {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between content and image */
+    align-items: center; /* Vertically center the items */
+    padding: 5rem 2rem; /* Add space inside the hero section */
+    background-color: #1f2937; /* Background color for the hero section */
+    color: #E5E7Eb; /* Default text color */
+  }
+  
+  /* Hero Content (Title and Buttons) */
+  .hero-content {
+    max-width: 600px; /* Limits the width of the content */
+  }
+  
+  .hero-title {
+    font-size: 2.5rem; /* Sets the size of the title */
+    font-weight: 700; /* Makes the title bold */
+    line-height: 1.3; /* Adjusts the line spacing */
+    margin-bottom: 1rem; /* Adds space below the title */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem; /* Sets the subtitle size */
+    line-height: 1.6; /* Increases line height for readability */
+    margin-bottom: 2rem; /* Adds space below the subtitle */
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex; /* Aligns buttons horizontally */
+    gap: 1rem; /* Adds space between the buttons */
+  }
+  
+  .btn {
+    padding: 0.75rem 2rem; /* Adds padding inside the buttons */
+    font-size: 1rem; /* Font size for buttons */
+    font-weight: 600; /* Makes the button text bold */
+    text-align: center; /* Centers the button text */
+    border-radius: 4px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .btn-secondary {
+    background-color: #ddd; /* Secondary button color */
+    color: #333; /* Dark text color */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #bbb; /* Darker gray on hover */
+  }
+  
+ /* Hero Image - Wider Version */
+ .hero-image img {
+    width: 50%; /* Increases image width to 50% of the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    border-radius: 30px; /* Rounds the corners (adjust as needed) */
+  }
+  
+
+
+ /* Features Section */
+.features {
+    padding: 4rem 2rem; /* Adds padding around the section */
+    background-color: #ADD8E6; /* Light blue background color */
+    text-align: center; /* Centers the text */
+  }
+  
+  .features-title {
+    font-size: 2rem; /* Sets the title size */
+    font-weight: 700; /* Makes the title bold */
+    margin-bottom: 2rem; /* Adds space below the title */
+  }
+  
+  /* Container for the Features */
+  .features-container {
+    display: flex; /* Aligns the images and text horizontally */
+    justify-content: space-between; /* Distributes the features evenly with space between */
+    gap: 2rem; /* Adds space between the features */
+    flex-wrap: nowrap; /* Prevents the features from wrapping to a new row */
+  }
+  
+  /* Individual Feature */
+  .feature {
+    background-color: white; /* White background for each feature block */
+    padding: 1.5rem; /* Adds padding inside each feature */
+    border-radius: 8px; /* Rounded corners for each feature block */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 23%; /* Ensures that all features are the same size */
+    flex-shrink: 0; /* Prevents the feature blocks from shrinking */
+    text-align: center; /* Centers the text inside each feature */
+  }
+  
+  /* Feature Heading (H3) */
+  .feature-heading {
+    font-size: 1.25rem; /* Sets a smaller size for the feature heading */
+    font-weight: 600; /* Makes the feature heading bold */
+    margin-top: 1rem; /* Adds space above the heading */
+    color: #333; /* Dark color for the heading */
+  }
+  
+  /* Feature Text (P) */
+  .feature-text {
+    font-size: 1rem; /* Sets the font size for the text */
+    color: #555; /* Sets a dark gray color for the text */
+    margin-top: 0.5rem; /* Adds space above the text */
+    line-height: 1.5; /* Adjusts the line height for readability */
+  }
+  
+  /* Feature Image */
+  .feature-image {
+    width: 100%; /* Makes the image take up the full width of the container */
+    height: auto; /* Maintains the image aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+
+/* Testimonial Section */
+.testimonials {
+    padding: 4rem 2rem; /* Adds padding around the section */
+    background-color: #E5E7EB; /* Light background for the section */
+    text-align: center; /* Centers the text */
+  }
+  
+  .testimonials-title {
+    font-size: 2.5rem; /* Sets the size for the title */
+    font-weight: 700; /* Makes the title bold */
+    margin-bottom: 2rem; /* Adds space below the title */
+  }
+  
+  /* Container for the Testimonials */
+  .testimonials-container {
+    display: flex; /* Aligns the testimonials horizontally */
+    justify-content: space-between; /* Distributes the testimonials evenly */
+    gap: 2rem; /* Adds space between the testimonial blocks */
+    flex-wrap: wrap; /* Allows testimonials to wrap on smaller screens */
+  }
+  
+  /* Individual Testimonial */
+  .testimonial {
+    background-color: white; /* White background for each testimonial */
+    padding: 2rem; /* Adds padding inside each testimonial */
+    border-radius: 8px; /* Rounded corners for each testimonial block */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 30%; /* Ensures each testimonial is the same size */
+    flex-shrink: 0; /* Prevents shrinking */
+    text-align: center; /* Centers the text */
+    max-width: 320px; /* Limits the width for better spacing */
+  }
+  
+  /* Testimonial Image */
+  .testimonial-image {
+    width: 100px; /* Sets the image width */
+    height: 100px; /* Sets the image height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    margin-bottom: 1rem; /* Adds space below the image */
+  }
+  
+  /* Testimonial Name */
+  .testimonial-name {
+    font-size: 1.2rem; /* Sets the name font size */
+    font-weight: 600; /* Makes the name bold */
+    color: #333; /* Dark color for the name */
+    margin-bottom: 1rem; /* Adds space below the name */
+  }
+  
+  /* Testimonial Text */
+  .testimonial-text {
+    font-size: 1rem; /* Sets the text size */
+    color: #555; /* Gray color for the testimonial text */
+    line-height: 1.5; /* Improves readability of the text */
+  }
+  
+  /* Rating Section */
+  .testimonial-rating {
+    margin-bottom: 1rem; /* Adds space below the rating */
+  }
+  
+  .star {
+    color: #f39c12; /* Gold color for the filled stars */
+    font-size: 1.5rem; /* Sets the size of the stars */
+  }
+  
+  /* Empty star (for unfilled ratings) */
+  .star:last-child {
+    color: #ddd; /* Light gray color for empty stars */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER SECTION */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stacks navbar content vertically */
+      align-items: flex-start; /* Aligns items to the start */
+      padding: 1rem; /* Adjusts padding for smaller screens */
+    }
+  
+    .nav-links {
+      flex-direction: column; /* Stacks links vertically */
+      gap: 1rem; /* Adjusts space between links */
+    }
+  }
+
+
+  /* HERO SECTION*/
+@media (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stack content and image vertically */
+      text-align: center; /* Center text for mobile screens */
+    }
+  
+    .hero-content {
+      max-width: 100%; /* Full width on smaller screens */
+      margin-bottom: 2rem; /* Adds space between content and image */
+    }
+  
+    .hero-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 1rem; /* Adds space between the buttons */
+    }
+  }
+
+    /* FEATURES SECTION */
+
+  @media (max-width: 768px) {
+    .features-container {
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      justify-content: center; /* Centers the feature blocks on smaller screens */
+    }
+  
+    .feature {
+      width: 45%; /* Makes each feature block take up 45% of the width on small screens */
+      margin-bottom: 2rem; /* Adds space between stacked feature blocks */
+    }
+  }
+
+  /* MEDIA QUERY FOR VERY SMALL SCREENS */
+@media (max-width: 480px) {
+    .feature {
+      width: 100%; /* Makes each feature block take up the full width on very small screens */
+    }
+  }
+
+
+  /* TESTIMONIAL SECTION */
+@media (max-width: 768px) {
+    .testimonials-container {
+      flex-direction: column; /* Stacks the testimonials vertically */
+      align-items: center; /* Centers the testimonials */
+    }
+  
+    .testimonial {
+      width: 80%; /* Makes each testimonial block wider on smaller screens */
+      margin-bottom: 2rem; /* Adds space between stacked testimonials */
+    }
+  }

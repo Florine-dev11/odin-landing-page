@@ -297,6 +297,92 @@
   background-color: #005b89; /* Darker shade on hover */
 }
 
+/* CONTACT INFORMATION */
+.contact-info {
+  background-color: #f8f9fa; /* Light background */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  width: 30%; /* Flex box gives equal spacing */
+  margin-bottom: 1.5rem;
+}
+
+.contact-item h3 {
+  font-size: 1.4rem;
+  color: #0077b6; /* Blue for headings */
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Social Media Links */
+.contact-social a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.contact-social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-social img:hover {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #1f2937; /* Light gray background */
+  padding: 2rem 0;
+  text-align: center; /* Centers the text */
+  color: #e5e7eb; /* Text color */
+  font-size: 1rem;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer a {
+  color: #0077b6; /* Blue link color */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 /*RESPONSIVE 
 DESIGN*/
 
@@ -397,5 +483,21 @@ DESIGN*/
   .btn-primary {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
+  }
+}
+/* CONTACT SECTION */
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 80%; /* Makes the contact items stack on mobile */
+    text-align: center;
+  }
+
+  .contact-social {
+    margin-top: 2rem;
   }
 }
